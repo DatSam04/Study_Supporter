@@ -1,0 +1,96 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html{
+  font-family: system-ui;
+}
+
+body{
+  display: grid;
+  min-height: 200vh;
+  background: #f2f2f2;
+  grid-template-columns: 15rem 1fr;
+  gap: 1rem;
+  margin: 0;
+}
+
+/* Navigation bar */
+nav{
+  position: sticky;
+  top: 0;
+  height: 100svh;
+  max-height: 100svh;
+  background-color: #4285f4;
+  font-size: 20px;
+  font-weight: 2;
+}
+
+.nav_bar{
+  margin: 0;
+  padding-block: 2rem;
+  list-style: none;
+  display: grid;
+  gap: 2rem;
+}
+
+.nav_bar li{
+  padding: 1rem 2rem;
+  background: pink;
+  border-radius: 100vw 0 0 100vw;
+}
+
+.nav_bar a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav_bar li.active{
+  background: #f2f2f2;
+}
+
+.nav_bar li.active a{
+  color: black;
+}
+
+.corner_top{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+/* Roadmap section */
+.roadmap{
+  position: absolute;
+  display: flex;
+  left: 18.65%;
+  width: 81.35%;
+  background-color: beige;
+  justify-content: space-between;
+}
+
+.fundamental-left{
+  width: 33%;
+  height: 50vh;
+  background-color: aqua;
+}
+
+.fundamental-middle{
+  width: 33%;
+  height: 50vh;
+  background-color: coral;
+}
+
+.fundamental-right{
+  width: 34%;
+  height: 50vh;
+  background-color: lawngreen;
+}
+
+/* Progress section */
+.progress{
+  width: 100vw;
+  height: 100vh;
+}
